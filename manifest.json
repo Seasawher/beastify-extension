@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Borderify",
+  "name": "Hello Misskey",
   "version": "1.0",
 
-  "description": "Adds a solid red border to all webpages matching mozilla.org.",
+  "description": "Misskey.io をWebブラウザで開いたときに挨拶をします",
 
   "icons": {
     "48": "icons/border-48.png"
@@ -11,8 +11,8 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["borderify.js"]
+      "matches": ["*://misskey.io/*"],
+      "js": ["index.js"]
     }
   ]
 }
